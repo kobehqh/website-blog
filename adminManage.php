@@ -34,15 +34,15 @@ if(!$result){
     <title>管理员管理列表</title>
     <link rel="stylesheet" href="css/reset.css">
     <!--WEUI CSS-->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_509679_b1wmq5ynskqhbyb9.css">
     <!--JS-->
     <script src="js/responsive.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!--WEUI JS-->
-    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
     <style>
         body{
             background: #eeeeee;
