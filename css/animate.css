@@ -1,0 +1,34 @@
+
+
+.more {
+    position: absolute;
+    right: 15px;
+    top: 4rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background-image:url("../images/stop-music.png");
+    background-size: contain;
+    z-index: 99;
+}
+.more.play {
+    background-image: url("../images/music.png");
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        -webkit-transform:rotate(0deg)
+    }
+    100%{
+        -webkit-transform:rotate(360deg)
+    }
+}
+@-webkit-keyframes rotate{
+    0%{
+        -webkit-transform:rotate(0deg)
+    }
+    100%{
+        -webkit-transform:rotate(360deg)
+    }
+}

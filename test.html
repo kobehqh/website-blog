@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="./css/icon.css" type="text/css">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <style>
+        .icon-music-outer{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            position: fixed;
+            right: 5px;
+            top: 10px;
+            font-size: 25px;
+            color: #ffda51;
+            z-index: 100;
+        }
+        .forbid{
+            display: inline-block;
+            font-size: 25px;
+            width: 25px;
+            height: 25px;
+        }
+        .icon-forbidMusic{
+            display: inline-block;
+            font-size: 25px;
+            width: 25px;
+            height: 25px;
+            color: #d0f2fc;
+            z-index: 101;
+        }
+        audio{
+            position: absolute;
+            left: -300px;
+        }
+    </style>
+</head>
+<body>
+<i class="icon-music-outer">
+    <i class="forbid icon-music"></i> <!--控制音乐图标-->
+    <audio loop autoplay="autoplay" controls id="bgMusic" src="res/music.mp3">
+    </audio>
+</i>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    var $music = $('.icon-music-outer');
+    var $forbid = $music.find('.forbid');
+    var audio = document.getElementById('bgMusic');
+    function audioAutoPlay(audio) {
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+        document.addEventListener('YixinJSBridgeReady', function () {
+            audio.play();
+        }, false);
+    }
+
+    audioAutoPlay(audio);
+
+    $music.on('click', function () {
+        if ($forbid.hasClass('icon-music')) {
+            $forbid.removeClass('icon-music').addClass('icon-forbidMusic');
+        } else {
+            $forbid.removeClass('icon-forbidMusic').addClass('icon-music');
+        }
+
+        if (audio.paused) {
+            audio.play();
+            return
+        }
+        audio.pause();
+    });
+</script>
+</body>
+</html>
