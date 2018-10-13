@@ -73,11 +73,11 @@ $to_page = ceil($num /$pageSize);
     <link href="css/index.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/m.css" rel="stylesheet">
-    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
 <!--    <script src="js/jquery.easyfader.min.js"></script>-->
     <script src="js/modernizr.js"></script>
     <!--WEUI JS-->
-    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
     <style>
         textarea::-webkit-input-placeholder{
             text-indent: 2rem;
