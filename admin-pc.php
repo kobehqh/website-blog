@@ -12,10 +12,10 @@
 <head>
     <meta charset="utf-8">
     <title>个人博客</title>
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         .navbar-default{
             background-color:#01aaed;
@@ -30,12 +30,24 @@
             border-color: white;
         }
         .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-            background-color:#01aaed;;
+            background-color:#01aaed;
+        }
+        .nav>li{
+            text-align: center;
+        }
+        .navbar-default .navbar-nav>li>a{
+            color: #bdbdbd;
+        }
+        .navbar-default .navbar-nav>li>a:hover{
+            color: white;
+        }
+        .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+            background-color: white;
+            color:#01aaed;
         }
     </style>
 </head>
 <body>
-
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -70,6 +82,5 @@
         </div>
     </div>
 </nav>
-
 </body>
 </html>

@@ -127,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin -pc.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin -pc.php">
+      <file leaf-file-name="admin-pc.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin-pc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36221838">
-              <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+            <state vertical-scroll-proportion="-1.0537262">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -192,6 +192,7 @@
         <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/gbook.php" />
         <option value="$PROJECT_DIR$/admin -pc.php" />
+        <option value="$PROJECT_DIR$/admin-pc.php" />
       </list>
     </option>
   </component>
@@ -262,7 +263,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shoppingCar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cambrian" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -755,10 +756,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin -pc.php">
+    <entry file="file://$PROJECT_DIR$/admin-pc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36221838">
-          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+        <state vertical-scroll-proportion="-1.0537262">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding />
         </state>
       </provider>
