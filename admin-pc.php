@@ -48,19 +48,19 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-example" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#example-navbar-collapse">
-<!--                <span class="sr-only">切换导航</span>-->
+                    data-target=".bs-js-navbar-scrollspy">
+                <span class="sr-only">切换导航</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">个人博客</a>
         </div>
-        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">iOS</a></li>
                 <li><a href="#">SVN</a></li>
