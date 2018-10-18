@@ -250,15 +250,16 @@ $num = $to_result[0];
     $("#pic2").attr("src","http://111.230.69.226/hqh/blog/images/basketball.jpg");
     $("#pic3").attr("src","http://111.230.69.226/hqh/blog/images/honey.jpg");
     bgMusic.attr('src',"http://111.230.69.226/hqh/blog/res/music1.mp3");
+    document.getElementById('audio').load();
+    document.getElementById('audio').play();
+    //      微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        document.getElementById('audio').play();
+    }, false);
 </script>
 <script>
     window.onload=function(){
-        document.getElementById('audio').load();
-        document.getElementById('audio').play();
-        //      微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效
-        document.addEventListener("WeixinJSBridgeReady", function () {
-            document.getElementById('audio').play();
-        }, false);
+
     }
 </script>
 <script>
