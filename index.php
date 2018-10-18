@@ -45,7 +45,10 @@ $num = $to_result[0];
     <link href="css/index.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/m.css" rel="stylesheet">
-    <script src="js/jquery.min.js" type="text/javascript"></script>
+<!--    页面加载动画样式-->
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css">
+<!--    <script src="js/jquery.min.js" type="text/javascript"></script>-->
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
     <script src="js/resLoader.js"></script>
     <script src="js/jquery.easyfader.min.js"></script>
     <script src="js/scrollReveal.js"></script>
@@ -54,10 +57,17 @@ $num = $to_result[0];
 </head>
 <body>
 <!--音乐-->
-<audio  loop="loop" id="audio">
+<audio  loop="loop" id="audio" preload="auto">
     Your browser does not support the audio tag.
 </audio>
 <?php require_once "menu.html" ?>
+<!--页面加载动画-->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    <div class="load_title">正在加载...</div>
+</div>
 <article>
     <!--banner begin-->
     <div class="picsbox">
@@ -106,7 +116,7 @@ $num = $to_result[0];
                         ?>
                         已阅读
                     </li>
-<!--                    <li class="like">0</li>-->
+                    <li class="like">0</li>
                 </ul>
             </div>
         </div>
@@ -236,11 +246,16 @@ $num = $to_result[0];
 //    $('.progressbar').css('width', percent+'%');
 //    $('.progresstext .current').text(current);
 //    $('.progresstext .total').text(total);
+        // 等待所有加载
     },
     onComplete : function(total){
-    alert('加载完毕:'+total+'个资源');
-    }
+        console.log('加载完毕:'+total+'个资源');
+        }
     });
+    $(function(){
+        $('body').addClass('loaded');
+        $("#loader-wrapper .load_title").remove();
+    })
     loader.start();
 //    for (var i =1;i < 4;i++){
 //        console.log(i);
@@ -250,6 +265,7 @@ $num = $to_result[0];
     $("#pic2").attr("src","http://111.230.69.226/hqh/blog/images/basketball.jpg");
     $("#pic3").attr("src","http://111.230.69.226/hqh/blog/images/honey.jpg");
     bgMusic.attr('src',"http://111.230.69.226/hqh/blog/res/music1.mp3");
+
     document.getElementById('audio').load();
     document.getElementById('audio').play();
     //      微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效
